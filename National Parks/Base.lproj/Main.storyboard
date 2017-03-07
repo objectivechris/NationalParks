@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mkl-9A-eRY">
+<device id="retina4_7" orientation="portrait">
+<adaptation id="fullscreen"/>
+</device>
+<dependencies>
+<deployment identifier="iOS"/>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+<capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<scenes>
+<!--Navigation Controller-->
+<scene sceneID="09V-cz-XNz">
+<objects>
+<navigationController toolbarHidden="NO" id="Mkl-9A-eRY" sceneMemberID="viewController">
+<navigationBar key="navigationBar" contentMode="scaleToFill" id="fyW-AI-bQc">
+<rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+<autoresizingMask key="autoresizingMask"/>
+</navigationBar>
+<toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hTt-Rc-5A9">
+<rect key="frame" x="0.0" y="623" width="375" height="44"/>
+<autoresizingMask key="autoresizingMask"/>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+</toolbar>
+<connections>
+<segue destination="FOM-dg-f9j" kind="relationship" relationship="rootViewController" id="wRe-d7-yZl"/>
+</connections>
+</navigationController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="RAe-jU-dzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="-950" y="147"/>
+</scene>
+<!--Parks Picker-->
+<scene sceneID="HU1-QG-r2M">
+<objects>
+<collectionViewController id="FOM-dg-f9j" customClass="MasterViewController" customModule="ParksPicker" customModuleProvider="target" sceneMemberID="viewController">
+<collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="sZI-H3-x57">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+<collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="XSi-Ug-Whr" customClass="ParksViewFlowLayout" customModule="ParksPicker" customModuleProvider="target">
+<size key="itemSize" width="200" height="200"/>
+<size key="headerReferenceSize" width="50" height="50"/>
+<size key="footerReferenceSize" width="0.0" height="0.0"/>
+<inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+</collectionViewFlowLayout>
+<cells>
+<collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ParkCell" id="EyP-Ka-yDA" customClass="ParkCell" customModule="ParksPicker" customModuleProvider="target">
+<rect key="frame" x="88" y="50" width="200" height="200"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+<rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+<autoresizingMask key="autoresizingMask"/>
+<subviews>
+<imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G53-cH-pyK">
+<rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+</imageView>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydu-fe-3jE" customClass="GradientView" customModule="ParksPicker" customModuleProvider="target">
+<rect key="frame" x="0.0" y="170" width="200" height="30"/>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+<constraints>
+<constraint firstAttribute="height" constant="30" id="Xhx-o9-5dH"/>
+</constraints>
+</view>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYE-qm-Sru">
+<rect key="frame" x="0.0" y="170" width="200" height="30"/>
+<constraints>
+<constraint firstAttribute="height" constant="30" id="NOS-cH-DEn"/>
+</constraints>
+<fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+<color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+<nil key="highlightedColor"/>
+</label>
+<imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="CXp-Qb-uQi">
+<rect key="frame" x="89" y="174" width="22" height="22"/>
+<constraints>
+<constraint firstAttribute="width" constant="22" id="8Km-z0-SfC"/>
+<constraint firstAttribute="height" constant="22" id="fHM-6F-Ae1"/>
+</constraints>
+</imageView>
+</subviews>
+</view>
+<constraints>
+<constraint firstAttribute="bottom" secondItem="dYE-qm-Sru" secondAttribute="bottom" id="1WM-xb-DRy"/>
+<constraint firstAttribute="bottom" secondItem="Ydu-fe-3jE" secondAttribute="bottom" id="3u0-Jw-Tbh"/>
+<constraint firstItem="G53-cH-pyK" firstAttribute="top" secondItem="EyP-Ka-yDA" secondAttribute="top" id="5a8-IN-iuV"/>
+<constraint firstAttribute="trailing" secondItem="Ydu-fe-3jE" secondAttribute="trailing" id="7CV-NZ-6Oh"/>
+<constraint firstItem="CXp-Qb-uQi" firstAttribute="centerX" secondItem="EyP-Ka-yDA" secondAttribute="centerX" id="9hu-s0-DkQ"/>
+<constraint firstAttribute="bottom" secondItem="CXp-Qb-uQi" secondAttribute="bottom" constant="4" id="MKN-9Q-g5D"/>
+<constraint firstAttribute="trailing" secondItem="dYE-qm-Sru" secondAttribute="trailing" id="Vpt-ig-BC6"/>
+<constraint firstAttribute="trailing" secondItem="G53-cH-pyK" secondAttribute="trailing" id="gaV-Og-IRc"/>
+<constraint firstItem="dYE-qm-Sru" firstAttribute="leading" secondItem="EyP-Ka-yDA" secondAttribute="leading" id="ikz-US-p8I"/>
+<constraint firstItem="Ydu-fe-3jE" firstAttribute="leading" secondItem="EyP-Ka-yDA" secondAttribute="leading" id="lIs-J7-LC4"/>
+<constraint firstItem="G53-cH-pyK" firstAttribute="leading" secondItem="EyP-Ka-yDA" secondAttribute="leading" id="ld0-9W-o0v"/>
+<constraint firstAttribute="bottom" secondItem="G53-cH-pyK" secondAttribute="bottom" id="qcd-Rh-8Zw"/>
+</constraints>
+<connections>
+<outlet property="captionLabel" destination="dYE-qm-Sru" id="W0u-UM-rRC"/>
+<outlet property="checkedImageView" destination="CXp-Qb-uQi" id="fjL-PE-eYm"/>
+<outlet property="gradientView" destination="Ydu-fe-3jE" id="SBe-ia-yIJ"/>
+<outlet property="parkImageView" destination="G53-cH-pyK" id="4Dg-XJ-Dw8"/>
+</connections>
+</collectionViewCell>
+</cells>
+<collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SectionHeader" id="6lj-nw-6dI" customClass="SectionHeaderView" customModule="ParksPicker" customModuleProvider="target">
+<rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+<autoresizingMask key="autoresizingMask"/>
+<subviews>
+<stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qc1-5v-cSb">
+<rect key="frame" x="16" y="16" width="343" height="34"/>
+<subviews>
+<imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pWg-yt-yef">
+<rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+<constraints>
+<constraint firstAttribute="width" constant="34" id="6US-N9-tgz"/>
+<constraint firstAttribute="height" constant="34" id="crz-uP-Obe"/>
+</constraints>
+</imageView>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axr-tq-sWH">
+<rect key="frame" x="42" y="0.0" width="301" height="34"/>
+<fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+</subviews>
+</stackView>
+</subviews>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+<constraints>
+<constraint firstItem="qc1-5v-cSb" firstAttribute="leading" secondItem="6lj-nw-6dI" secondAttribute="leadingMargin" constant="8" id="G61-HZ-zhz"/>
+<constraint firstItem="qc1-5v-cSb" firstAttribute="top" secondItem="6lj-nw-6dI" secondAttribute="topMargin" constant="8" id="Lyo-Tn-F8T"/>
+<constraint firstItem="qc1-5v-cSb" firstAttribute="bottom" secondItem="6lj-nw-6dI" secondAttribute="bottomMargin" constant="8" id="UaQ-da-8Ym"/>
+<constraint firstAttribute="trailingMargin" secondItem="qc1-5v-cSb" secondAttribute="trailing" constant="8" id="Up8-nn-WCQ"/>
+</constraints>
+<connections>
+<outlet property="iconImageView" destination="pWg-yt-yef" id="BJB-5w-102"/>
+<outlet property="titleLabel" destination="Axr-tq-sWH" id="XEB-u4-RfS"/>
+</connections>
+</collectionReusableView>
+<connections>
+<outlet property="dataSource" destination="FOM-dg-f9j" id="qxE-Ua-mLL"/>
+<outlet property="delegate" destination="FOM-dg-f9j" id="ixF-8G-eLv"/>
+</connections>
+</collectionView>
+<toolbarItems>
+<barButtonItem style="plain" systemItem="flexibleSpace" id="wii-lz-7zi"/>
+<barButtonItem systemItem="trash" id="A6H-3u-XL3">
+<connections>
+<action selector="deleteButtonTapped:" destination="FOM-dg-f9j" id="Qdf-mQ-zwi"/>
+</connections>
+</barButtonItem>
+<barButtonItem style="plain" systemItem="flexibleSpace" id="qnr-yO-rcS"/>
+</toolbarItems>
+<navigationItem key="navigationItem" title="Parks Picker" id="rZg-p2-Y1n">
+<barButtonItem key="rightBarButtonItem" systemItem="add" id="oki-WP-ajb">
+<connections>
+<action selector="addButtonTapped:" destination="FOM-dg-f9j" id="zjd-K5-FIn"/>
+</connections>
+</barButtonItem>
+</navigationItem>
+<connections>
+<outlet property="addButton" destination="oki-WP-ajb" id="mME-Nm-XUk"/>
+<segue destination="NSL-op-UTf" kind="show" identifier="MasterToDetail" id="DKX-vD-y3h"/>
+</connections>
+</collectionViewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="LcN-cn-x9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="-242" y="145"/>
+</scene>
+<!--Detail View Controller-->
+<scene sceneID="Qps-A8-Jnc">
+<objects>
+<viewController storyboardIdentifier="DetailViewController" id="NSL-op-UTf" userLabel="Detail View Controller" customClass="DetailViewController" customModule="ParksPicker" customModuleProvider="target" sceneMemberID="viewController">
+<layoutGuides>
+<viewControllerLayoutGuide type="top" id="In2-3e-CeU"/>
+<viewControllerLayoutGuide type="bottom" id="Qix-AP-THC"/>
+</layoutGuides>
+<view key="view" contentMode="scaleToFill" id="G04-mw-rDT">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7T7-fb-LnL">
+<rect key="frame" x="0.0" y="64" width="375" height="559"/>
+</imageView>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBk-Bj-ruF">
+<rect key="frame" x="0.0" y="585" width="375" height="18"/>
+<fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+<color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+<nil key="highlightedColor"/>
+<color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+<size key="shadowOffset" width="1" height="1"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPs-rs-t0Q">
+<rect key="frame" x="0.0" y="559" width="375" height="18"/>
+<fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+<color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+<nil key="highlightedColor"/>
+<color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+<size key="shadowOffset" width="1" height="1"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLV-lW-sck">
+<rect key="frame" x="0.0" y="528.5" width="375" height="22.5"/>
+<fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+<color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+<nil key="highlightedColor"/>
+<color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+<size key="shadowOffset" width="1" height="1"/>
+</label>
+</subviews>
+<color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+<constraints>
+<constraint firstItem="7T7-fb-LnL" firstAttribute="leading" secondItem="G04-mw-rDT" secondAttribute="leading" id="1el-XG-ecN"/>
+<constraint firstAttribute="trailing" secondItem="fBk-Bj-ruF" secondAttribute="trailing" id="DDp-aC-hiY"/>
+<constraint firstItem="JPs-rs-t0Q" firstAttribute="leading" secondItem="G04-mw-rDT" secondAttribute="leading" id="H2B-Pa-klY"/>
+<constraint firstItem="fBk-Bj-ruF" firstAttribute="top" secondItem="JPs-rs-t0Q" secondAttribute="bottom" constant="8" id="HFS-F6-uT0"/>
+<constraint firstItem="Qix-AP-THC" firstAttribute="top" secondItem="fBk-Bj-ruF" secondAttribute="bottom" constant="20" id="X1o-Be-jez"/>
+<constraint firstAttribute="trailing" secondItem="BLV-lW-sck" secondAttribute="trailing" id="coe-Kg-44b"/>
+<constraint firstItem="7T7-fb-LnL" firstAttribute="top" secondItem="In2-3e-CeU" secondAttribute="bottom" id="em9-ms-DxX"/>
+<constraint firstItem="Qix-AP-THC" firstAttribute="top" secondItem="7T7-fb-LnL" secondAttribute="bottom" id="fCi-x4-iJK"/>
+<constraint firstAttribute="trailing" secondItem="JPs-rs-t0Q" secondAttribute="trailing" id="i6S-11-f2V"/>
+<constraint firstItem="JPs-rs-t0Q" firstAttribute="top" secondItem="BLV-lW-sck" secondAttribute="bottom" constant="8" id="jjb-FL-W8P"/>
+<constraint firstItem="BLV-lW-sck" firstAttribute="leading" secondItem="G04-mw-rDT" secondAttribute="leading" id="lMi-Qs-uQN"/>
+<constraint firstAttribute="trailing" secondItem="7T7-fb-LnL" secondAttribute="trailing" id="qBQ-Fy-V71"/>
+<constraint firstItem="fBk-Bj-ruF" firstAttribute="leading" secondItem="G04-mw-rDT" secondAttribute="leading" id="tzm-Bo-0hA"/>
+</constraints>
+</view>
+<navigationItem key="navigationItem" id="AET-sJ-qA6"/>
+<connections>
+<outlet property="dateLabel" destination="fBk-Bj-ruF" id="ynI-tn-XaG"/>
+<outlet property="imageView" destination="7T7-fb-LnL" id="nRi-FN-out"/>
+<outlet property="nameLabel" destination="BLV-lW-sck" id="Rr7-zv-Wpq"/>
+<outlet property="stateLabel" destination="JPs-rs-t0Q" id="f6W-cP-aSN"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="hMm-VQ-jiw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="494" y="146"/>
+</scene>
+</scenes>
+<resources>
+<image name="Unchecked" width="22" height="22"/>
+</resources>
+</document>

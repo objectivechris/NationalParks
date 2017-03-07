@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D03714411E6E790E00621295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03714401E6E790E00621295 /* AppDelegate.swift */; };
+		D03714461E6E790E00621295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03714441E6E790E00621295 /* Main.storyboard */; };
+		D03714481E6E790E00621295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03714471E6E790E00621295 /* Assets.xcassets */; };
+		D037144B1E6E790E00621295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03714491E6E790E00621295 /* LaunchScreen.storyboard */; };
+		D03714531E6E794A00621295 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03714521E6E794A00621295 /* MasterViewController.swift */; };
+		D03714551E6E796F00621295 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03714541E6E796F00621295 /* DetailViewController.swift */; };
+		D03714571E6E79A200621295 /* ParksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03714561E6E79A200621295 /* ParksDataSource.swift */; };
+		D03714591E6E79D300621295 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03714581E6E79D300621295 /* CollectionViewCell.swift */; };
+		D037145B1E6E7A1300621295 /* ParkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037145A1E6E7A1300621295 /* ParkCell.swift */; };
+		D037145D1E6E7A3F00621295 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037145C1E6E7A3F00621295 /* SectionHeaderView.swift */; };
+		D037145F1E6E7A6200621295 /* ParksViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037145E1E6E7A6200621295 /* ParksViewFlowLayout.swift */; };
+		D03714611E6E7ACF00621295 /* NationalParks.plist in Resources */ = {isa = PBXBuildFile; fileRef = D03714601E6E7ACF00621295 /* NationalParks.plist */; };
+		D03714631E6E7B7E00621295 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03714621E6E7B7E00621295 /* Park.swift */; };
+		D03714651E6E7B9600621295 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03714641E6E7B9600621295 /* GradientView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D037143D1E6E790E00621295 /* National Parks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "National Parks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03714401E6E790E00621295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D03714451E6E790E00621295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D03714471E6E790E00621295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D037144A1E6E790E00621295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D037144C1E6E790E00621295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03714521E6E794A00621295 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		D03714541E6E796F00621295 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D03714561E6E79A200621295 /* ParksDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParksDataSource.swift; sourceTree = "<group>"; };
+		D03714581E6E79D300621295 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		D037145A1E6E7A1300621295 /* ParkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkCell.swift; sourceTree = "<group>"; };
+		D037145C1E6E7A3F00621295 /* SectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		D037145E1E6E7A6200621295 /* ParksViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParksViewFlowLayout.swift; sourceTree = "<group>"; };
+		D03714601E6E7ACF00621295 /* NationalParks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NationalParks.plist; sourceTree = "<group>"; };
+		D03714621E6E7B7E00621295 /* Park.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		D03714641E6E7B9600621295 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D037143A1E6E790E00621295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D03714341E6E790E00621295 = {
+			isa = PBXGroup;
+			children = (
+				D037143F1E6E790E00621295 /* National Parks */,
+				D037143E1E6E790E00621295 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D037143E1E6E790E00621295 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D037143D1E6E790E00621295 /* National Parks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D037143F1E6E790E00621295 /* National Parks */ = {
+			isa = PBXGroup;
+			children = (
+				D03714401E6E790E00621295 /* AppDelegate.swift */,
+				D03714661E6E7C0E00621295 /* Controllers */,
+				D03714681E6E7C3800621295 /* Model */,
+				D03714671E6E7C2100621295 /* Layouts */,
+				D03714441E6E790E00621295 /* Main.storyboard */,
+				D03714471E6E790E00621295 /* Assets.xcassets */,
+				D03714491E6E790E00621295 /* LaunchScreen.storyboard */,
+				D037144C1E6E790E00621295 /* Info.plist */,
+				D03714601E6E7ACF00621295 /* NationalParks.plist */,
+			);
+			path = "National Parks";
+			sourceTree = "<group>";
+		};
+		D03714661E6E7C0E00621295 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D03714521E6E794A00621295 /* MasterViewController.swift */,
+				D03714541E6E796F00621295 /* DetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D03714671E6E7C2100621295 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				D03714581E6E79D300621295 /* CollectionViewCell.swift */,
+				D037145A1E6E7A1300621295 /* ParkCell.swift */,
+				D037145C1E6E7A3F00621295 /* SectionHeaderView.swift */,
+				D03714641E6E7B9600621295 /* GradientView.swift */,
+				D037145E1E6E7A6200621295 /* ParksViewFlowLayout.swift */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		D03714681E6E7C3800621295 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D03714561E6E79A200621295 /* ParksDataSource.swift */,
+				D03714621E6E7B7E00621295 /* Park.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D037143C1E6E790E00621295 /* National Parks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D037144F1E6E790E00621295 /* Build configuration list for PBXNativeTarget "National Parks" */;
+			buildPhases = (
+				D03714391E6E790E00621295 /* Sources */,
+				D037143A1E6E790E00621295 /* Frameworks */,
+				D037143B1E6E790E00621295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "National Parks";
+			productName = "National Parks";
+			productReference = D037143D1E6E790E00621295 /* National Parks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D03714351E6E790E00621295 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Christopher Rene";
+				TargetAttributes = {
+					D037143C1E6E790E00621295 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = L282C3DF98;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D03714381E6E790E00621295 /* Build configuration list for PBXProject "National Parks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D03714341E6E790E00621295;
+			productRefGroup = D037143E1E6E790E00621295 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D037143C1E6E790E00621295 /* National Parks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D037143B1E6E790E00621295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03714611E6E7ACF00621295 /* NationalParks.plist in Resources */,
+				D037144B1E6E790E00621295 /* LaunchScreen.storyboard in Resources */,
+				D03714481E6E790E00621295 /* Assets.xcassets in Resources */,
+				D03714461E6E790E00621295 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D03714391E6E790E00621295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03714591E6E79D300621295 /* CollectionViewCell.swift in Sources */,
+				D03714571E6E79A200621295 /* ParksDataSource.swift in Sources */,
+				D03714651E6E7B9600621295 /* GradientView.swift in Sources */,
+				D03714551E6E796F00621295 /* DetailViewController.swift in Sources */,
+				D03714411E6E790E00621295 /* AppDelegate.swift in Sources */,
+				D037145D1E6E7A3F00621295 /* SectionHeaderView.swift in Sources */,
+				D03714531E6E794A00621295 /* MasterViewController.swift in Sources */,
+				D037145F1E6E7A6200621295 /* ParksViewFlowLayout.swift in Sources */,
+				D03714631E6E7B7E00621295 /* Park.swift in Sources */,
+				D037145B1E6E7A1300621295 /* ParkCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D03714441E6E790E00621295 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D03714451E6E790E00621295 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D03714491E6E790E00621295 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D037144A1E6E790E00621295 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D037144D1E6E790E00621295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D037144E1E6E790E00621295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D03714501E6E790E00621295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L282C3DF98;
+				INFOPLIST_FILE = "National Parks/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.objectivechris.National-Parks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D03714511E6E790E00621295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L282C3DF98;
+				INFOPLIST_FILE = "National Parks/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.objectivechris.National-Parks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D03714381E6E790E00621295 /* Build configuration list for PBXProject "National Parks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D037144D1E6E790E00621295 /* Debug */,
+				D037144E1E6E790E00621295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D037144F1E6E790E00621295 /* Build configuration list for PBXNativeTarget "National Parks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D03714501E6E790E00621295 /* Debug */,
+				D03714511E6E790E00621295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D03714351E6E790E00621295 /* Project object */;
+}
