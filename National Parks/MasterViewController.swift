@@ -19,6 +19,8 @@ class MasterViewController: UICollectionViewController {
         layout.itemSize = CGSize(width: width, height: width)
         layout.sectionHeadersPinToVisibleBounds = true
         
+        collectionView?.backgroundColor = UIColor.white
+        
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(MasterViewController.refreshControlDidFire), for: .valueChanged)
         collectionView?.refreshControl = refreshControl
