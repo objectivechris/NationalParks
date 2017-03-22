@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MasterViewController: UICollectionViewController {
+class MasterViewController: UICollectionViewController, UIViewControllerPreviewingDelegate {
     fileprivate var parksDataSource = ParksDataSource()
     @IBOutlet weak var addButton: UIBarButtonItem!
     
@@ -28,6 +28,10 @@ class MasterViewController: UICollectionViewController {
         
         navigationController!.isToolbarHidden = true
         self.installsStandardGestureForInteractiveMovement = true
+        
+        if traitCollection.forceTouchCapability == .available {
+            registerForPreviewing(with: self as! UIViewControllerPreviewingDelegate, sourceView: view)
+        }
     }
     
     func refreshControlDidFire() {
@@ -135,7 +139,29 @@ extension MasterViewController {
         }
     }
     
-    override func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        parksDataSource.moveParkAtIndexPath(sourceIndexPath, toIndexPath: destinationIndexPath)
+//    override func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+//        parksDataSource.moveParkAtIndexPath(sourceIndexPath, toIndexPath: destinationIndexPath)
+//    }
+    
+    // MARK: - UIViewControllerPreviewingDelegate methods
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        
+        guard let indexPath = collectionView?.indexPathForItem(at: location) else { return nil }
+        guard let cell = collectionView?.cellForItem(at: indexPath) else { return nil }
+        
+        guard let detailViewController = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return nil }
+        
+        let selectedPark = parksDataSource.parkForItemAtIndexPath(indexPath)
+        detailViewController.park = selectedPark
+        //detailViewController.preferredContentSize = CGSize(width: 0.0, height: 450.0)
+        
+        previewingContext.sourceRect = cell.frame
+        
+        return detailViewController
+    }
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        show(viewControllerToCommit, sender: self)
     }
 }
